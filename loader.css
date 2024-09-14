@@ -1,0 +1,73 @@
+@font-face {
+    font-family: timat;
+    src: url(./assests/fonts/Kanit-Regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+#preloader{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    color: white;
+
+}
+
+.progress-bar{
+    position: relative;
+    height: 10%;
+    min-width: 350px;    
+    overflow: hidden;
+}
+
+.progress-bar-fill{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #afbec8;
+    transition: width 0.5s ease; 
+}
+
+.counter{
+    font-family:  'Lucida Sans';
+    font-weight: 600;
+    font-size: 5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.counter>span{
+    font-size: 20px;
+}
+
+.page-1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #212721;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
